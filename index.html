@@ -1,0 +1,233 @@
+<!--Codecademy Project-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--Shows in browser tab-->
+    <title>HTML Cheat Sheet</title>
+
+	<!--Link css stylesheet here-->
+    <link rel="stylesheet" href="/Codecademy/Table Cheat Sheet/css/style.css">
+
+    <!--Add favicon here-->
+    <link rel="icon" type="image/x-icon" href="/Codecademy/Table Cheat Sheet/resources/html_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png">
+
+    <!--Table css, saved time building table elements with https://codebeautify.org/html-table-generator and added to/adjusted the html and css-->
+    <style>
+		#demTable {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			border: 2px solid black;
+			border-collapse: collapse;
+			padding: 0px;
+			display: inline-table;
+			width: 680px;
+
+		}
+		#demTable th {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			border: 1px solid #666;
+			padding-bottom: 6px;
+			margin: 0 auto;
+			background-color: black;
+			color: white;
+			font-size: 18px;
+		}
+
+		#demTable tr {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			text-align: center;			
+		}
+
+		#demTable td {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			font-size: 12px;
+			border: 1px solid #666;
+			text-align: left;
+			padding: 5px;
+			background-color: lightcyan;
+			color: black;
+		}	
+
+		tfoot {
+			border-top: 2px solid black;
+			
+		}
+
+		td#pinterest-link {
+			text-align: center;
+			background-color: pink;
+			font-family: "Lucida Console", Courier, monospace;		
+			padding: 5px 0px 3px 0px;
+		}
+	</style>
+</head>
+
+<body>
+    <header>
+        <h1>&#10047; HTML Cheat Sheet &#10047;</h1>
+    </header>
+
+    
+	<section>
+	<!--Saved time building table elements with: https://codebeautify.org/html-table-generator-->
+    <table id="demTable">
+		<thead>
+			<tr>
+				<th>Tag</th>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>&lt;!DOCTYPE&gt;</td>
+				<td>Document Type</td>
+				<td>Begin every document with this. Tells browser to render HTML code as HTML5.</td>
+			</tr>
+
+			<tr>
+				<td>&lt;html&gt;</td>
+				<td>Hyper Text Markup Language</td>
+				<td>Root element. Other elements are descendants of this element.</td>
+			</tr>
+			<tr>
+				<td>&lt;head&gt;</td>
+				<td>Head</td>
+				<td>Metadata <u><em>about</u></em> the page (title, stylesheets, scripts).</td>
+			</tr>
+			<tr>
+				<td>&lt;title&gt;</td>
+				<td>Title</td>
+				<td>Shows in browser tab. Important for SEO!</td>
+			</tr>
+
+			<!--If you want a horizontal black line in a table, use a thead section and just leave td blank-->
+			<thead>
+				<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+
+			<tr>
+				<td>&lt;body&gt;</td>
+				<td>Body</td>
+				<td>Content <u><em>on</u></em> the page (headers, body, footer).</td>
+			</tr>
+
+			<tr>
+				<td>&lt;header&gt;</td>
+				<td>Header</td>
+				<td>Main header. Introductory content or nav links often go here.</td>
+			</tr>
+
+			<tr>
+				<td>&lt;h1 to h6&gt;</td>
+				<td>Headings</td>
+				<td>Heading sizes (h1 is largest, h6 smallest).</td>
+			</tr>
+
+			<tr>
+				<td>&lt;main&gt;</td>
+				<td>Main</td>
+				<td>Contains main content of web page.</td>
+			</tr>
+
+			<tr>
+				<td>&lt;nav&gt;</td>
+				<td>Navigation Bar</td>
+				<td>Set of links. Modern design is usually horizontal bar at top of page.</td>
+			</tr>
+
+            <tr>
+				<td>&lt;section&gt;</td>
+				<td>Section</td>
+				<td>Standalone section of content.</td>
+			</tr>
+
+            <tr>
+				<td>&lt;aside&gt;</td>
+				<td>Aside</td>
+				<td>Content is indirectly related to main content.</td>
+			</tr>
+
+            <tr>
+				<td>&lt;address&gt;</td>
+				<td>Address</td>
+				<td>Contact information.</td>
+			</tr>
+
+            <tr>
+				<td>&lt;footer&gt;</td>
+				<td>Footer</td>
+				<td>Copyright data, author information, links, social media can go here.</td>
+			</tr>      
+			
+			<thead>
+				<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+
+			<tr>
+				<td>&lt;div&gt;</td>
+				<td>Div</td>
+				<td>Generic container for html elements. Don't overuse.</td>
+			</tr>
+
+			<tr>
+				<td>&lt;ul&gt;</td>
+				<td>Unordered List</td>
+				<td>Bullet point list, not numbered.</td>
+			</tr>
+
+			<tr>
+				<td>&lt;ol&gt;</td>
+				<td>Ordered List</td>
+				<td>Numbered list.</td>
+			</tr>
+
+			<tr>
+				<td>&lt;li&gt;</td>
+				<td>List Item</td>
+				<td>Actual line of text in list.</td>
+			</tr>
+			
+			<tr>
+				<td>&lt;p&gt;</td>
+				<td>Paragraph</td>
+				<td>Use for text, both single line and paragraph.</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+			  <td id="pinterest-link" colspan="3" >Inspiration from Pinterest: <a href="https://www.pinterest.com/pin/2251868556787163/" target="_blank">https://www.pinterest.com/pin/2251868556787163/</a>
+			  </td>
+			</tr>
+		  </tfoot>
+	</table>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
